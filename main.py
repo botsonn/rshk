@@ -50,7 +50,7 @@ def views(tgurl: str) -> bool:
     params: dict = {
         "jack" : tgurl
     }
-    url: str = "https://ava-tar.online/api/kro" # API owner: @uu4uo
+    url: str = "http://utleg.online/API/views.php" # API owner: @uu4uo
     response: Response = s.get(url, params=params).json()
     return True if "تم الرشق بنجاح" in response["text"] else False
 
