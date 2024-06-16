@@ -22,7 +22,7 @@ DEV = InlineKeyboardMarkup([
 @app.on_message(filters.command("start"))
 async def start(_: Client, message: Message) -> None:
     await message.reply(
-        "- مرحبا بك في بوت رشق مشاهدات تليجرام.\n- قم بإرسال رابط ليتم الرشق اليه.\n- يمكنك ارسال اكثر من رابط بنفس الرساله.\n- ممنوع تكرار الرابط (سيتم حظر القناه تلقائيا)",
+        "- مرحبا بك في  سورس نجد رشق مشاهدات تليجرام.\n- قم بإرسال رابط ليتم الرشق اليه.\n- يمكنك ارسال اكثر من رابط بنفس الرساله.\n- ممنوع تكرار الرابط (سيتم حظر القناه تلقائيا)",
         reply_to_message_id=message.id,
         reply_markup=DEV
     )
