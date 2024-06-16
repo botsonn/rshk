@@ -16,7 +16,7 @@ app = Client(
 s = Session()
 pattern: str = r"(http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)"
 DEV = InlineKeyboardMarkup([
-    [InlineKeyboardButton("- المطور -", user_id=6673736816)]
+    [InlineKeyboardButton("- Dev -", user_id=7085943284)]
 ])
 
 @app.on_message(filters.command("start"))
@@ -50,11 +50,11 @@ def views(tgurl: str) -> bool:
     params: dict = {
         "jack" : tgurl
     }
-    url: str = "http://utleg.online/API/views.php" # API owner: @uu4uo
+    url: str = "http://utleg.online/API/views.php" # API owner: @NGD_2
     response: Response = s.get(url, params=params).json()
     return True if "تم الرشق بنجاح" in response["text"] else False
 
 
-# 𝗪𝗥𝗜𝗧𝗧𝗘𝗡 𝗕𝗬 : @BENN_DEV, @UP_UO 
-# 𝗦𝗢𝗨𝗥𝗖𝗘 : @BENfiles , @UI_XB 
+# 𝗪𝗥𝗜𝗧𝗧𝗘𝗡 𝗕𝗬 : @B_B_K, @Z_l_7 
+# 𝗦𝗢𝗨𝗥𝗖𝗘 : @l_I_V , @NGD_1 
 if __name__ == "__main__": app.run()
